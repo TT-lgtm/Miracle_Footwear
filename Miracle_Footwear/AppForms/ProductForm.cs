@@ -171,13 +171,8 @@ namespace Miracle_Footwear.AppForms
                 MessageBox.Show("Пожалуйста, выберите размер обуви из списка!", "Ошибка ввода", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             AddCurrentSelectionToTempList();
-
             MessageBox.Show($"Товар добавлен в заказ (всего позиций: {TempOrderItems.Count}). Вы можете выбрать другие товары из каталога или подтвердить заказ.","Позиция добавлена", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            this.DialogResult = DialogResult.OK;
-            this.Close();
         }
         private void addToOrderBtn_Click(object sender, EventArgs e)
         {
